@@ -5,7 +5,19 @@ import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 
+import {createStore} from 'redux';
+
+
+  //STORE -> GLOBALIZED STATE
+//ACTION - function that returns and object
+
+//REDUCER - DESCRIBES WHAT YOUR ACTION IF GOING TO USE ON THE NEXT STATE
+
+
+
 const App = () => {
+
+  //this state NEEDS to be in redux...
   const state = {
     additionalPrice: 0,
     car: {
@@ -23,6 +35,7 @@ const App = () => {
     ]
   };
 
+//DISPATCH - WE CAN SENT THE ACTION TO THE REDUCER
   const removeFeature = item => {
     // dispatch an action here to remove an item
   };
